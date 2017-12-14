@@ -1,0 +1,25 @@
+From 94ae139a3e70a4797560f0420501421058935e42 Mon Sep 17 00:00:00 2001
+From: maxbr <maxbr@mi.fu-berlin.de>
+Date: Sun, 5 Nov 2017 13:40:59 +0100
+Subject: [PATCH 2/2] Fix warnings
+
+---
+ library/version.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/library/version.c b/library/version.c
+index 6ca80d46..8fbd8388 100644
+--- a/library/version.c
++++ b/library/version.c
+@@ -30,7 +30,7 @@
+ #include "mbedtls/version.h"
+ #include <string.h>
+ 
+-unsigned int mbedtls_version_get_number()
++unsigned int mbedtls_version_get_number(void)
+ {
+     return( MBEDTLS_VERSION_NUMBER );
+ }
+-- 
+2.14.2
+
